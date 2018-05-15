@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_appbar_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/lobster_regular"
+                    android:gravity="center"
+                    android:text="@string/title_activity_main"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lobster_regular"
+                    android:gravity="center"
+                    android:text="®"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:padding="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:src="@drawable/ic_refresh_black_24dp"
+                        android:tint="@color/colorWhite"
+                        android:onClick="refresh"/>
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:padding="6dp"
+                        android:src="@drawable/ic_view_list_black_24dp"
+                        android:tint="@color/colorWhite"
+                        android:onClick="addNewLocation"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_main_root_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/activity_main_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_anchor="@id/activity_main_root_container"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabGravity="center"
+        app:tabMaxWidth="10dp"
+        app:tabIndicatorHeight="0dp"/>
+
+    <include
+        layout="@layout/layout_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:scaleType="fitXY"
+        app:layout_anchor="@+id/activity_main_root_container"
+        app:layout_anchorGravity="bottom|center"
+        app:srcCompat="@drawable/ic_bottom_shape_blue" />
+
+</android.support.design.widget.CoordinatorLayout>

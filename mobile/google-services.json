@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "119222205795",
+    "firebase_url": "https://windo-5323a.firebaseio.com",
+    "project_id": "windo-5323a",
+    "storage_bucket": "windo-5323a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119222205795:android:f4a9ef51e01b526a",
+        "android_client_info": {
+          "package_name": "com.kortain.windo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119222205795-bns8ca77ugmupv6boupl3o794a7qot36.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kortain.windo",
+            "certificate_hash": "dbe098fb3e7567e3c9d95900b004a54974cf8b94"
+          }
+        },
+        {
+          "client_id": "119222205795-0ql085dan98tgsmb7n6earkuuj1ojnh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByi_VwtFmrL9nrjCciB2vBk-noJr_gZsg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119222205795-0ql085dan98tgsmb7n6earkuuj1ojnh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
